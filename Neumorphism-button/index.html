@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism Button UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d3d3d3;
+        }
+        input[type='checkbox']{
+            width: 100px;
+            height: 100px;
+            -webkit-appearance: none;
+            box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+                        10px 10px 15px rgba(70, 70, 70,0.1);
+            border-radius: 50%;
+            border: 1px solid #d3d3d3;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        input[type='checkbox']::after{
+            font-family: FontAwesome;
+            content: '\f011';
+            font-size: 50px;
+            color: #a7a7a7;
+        }
+        input[type='checkbox']:checked{
+            box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+                        10px 10px 15px rgba(70, 70, 70,0.1),
+                        inset -10px -10px 15px rgba(255,255,255,0.5),
+                        inset 10px 10px 15px rgba(70, 70, 70,0.1);
+        }
+        input[type='checkbox']:checked::after{
+            color: #15e381;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" name="" id="neumorphism">
+    </div>
+</body>
+</html>
